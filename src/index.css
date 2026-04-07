@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --bg: #e2e2e0;
+  --fg: #111111;
+  --fg-dim: rgba(17, 17, 17, 0.5);
+  --fg-faint: rgba(17, 17, 17, 0.15);
+  --fg-ghost: rgba(17, 17, 17, 0.06);
+  --accent: #e62e31;
+  --accent-dim: rgba(230, 46, 49, 0.15);
+  --white: #f5f3f0;
+
+  --font-display: 'Syne', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; cursor: crosshair; }
+
+html { background: var(--bg); }
+
+body {
+  font-family: var(--font-body);
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  cursor: crosshair;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  text-align: left;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--white);
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--fg-faint); }
