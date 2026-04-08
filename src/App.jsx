@@ -483,6 +483,31 @@ function App() {
         <div className="section-separator" />
 
         <Reflections />
+        <div className="section-separator" />
+
+        <section className="video-section">
+          <div className="container">
+            <R>
+              <div className="section-header">
+                <span className="section-tag">08 — Video</span>
+              </div>
+            </R>
+            <R>
+              <h2 className="video-title">Watch the walkthrough.</h2>
+            </R>
+            <R>
+              <div className="video-embed">
+                <iframe
+                  src="https://www.youtube.com/embed/eAS4X9mQEJU"
+                  title="Aaron's Agents — Learning Challenge"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </R>
+          </div>
+        </section>
 
         <Footer />
       </div>
